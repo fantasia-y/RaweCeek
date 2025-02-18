@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F87A0F902D5A25C400C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F8F2D5A25C400C3E02B /* JolpicaKit */; };
+		F87A0F932D5A262400C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F922D5A262400C3E02B /* JolpicaKit */; };
+		F87A0F992D5A278D00C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F982D5A278D00C3E02B /* JolpicaKit */; };
+		F87A0F9C2D5A27C900C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F9B2D5A27C900C3E02B /* JolpicaKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F87A0F7D2D5A182F00C3E02B /* RaweCeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaweCeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87A0F9C2D5A27C900C3E02B /* JolpicaKit in Frameworks */,
+				F87A0F932D5A262400C3E02B /* JolpicaKit in Frameworks */,
+				F87A0F992D5A278D00C3E02B /* JolpicaKit in Frameworks */,
+				F87A0F902D5A25C400C3E02B /* JolpicaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = RaweCeek;
 			packageProductDependencies = (
+				F87A0F8F2D5A25C400C3E02B /* JolpicaKit */,
+				F87A0F922D5A262400C3E02B /* JolpicaKit */,
+				F87A0F982D5A278D00C3E02B /* JolpicaKit */,
+				F87A0F9B2D5A27C900C3E02B /* JolpicaKit */,
 			);
 			productName = RaweCeek;
 			productReference = F87A0F7D2D5A182F00C3E02B /* RaweCeek.app */;
@@ -94,6 +109,9 @@
 			);
 			mainGroup = F87A0F742D5A182F00C3E02B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F87A0F9A2D5A27C900C3E02B /* XCLocalSwiftPackageReference "../JolpicaKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F87A0F7E2D5A182F00C3E02B /* Products */;
 			projectDirPath = "";
@@ -260,6 +278,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +308,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +344,32 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F87A0F9A2D5A27C900C3E02B /* XCLocalSwiftPackageReference "../JolpicaKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../JolpicaKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F87A0F8F2D5A25C400C3E02B /* JolpicaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JolpicaKit;
+		};
+		F87A0F922D5A262400C3E02B /* JolpicaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JolpicaKit;
+		};
+		F87A0F982D5A278D00C3E02B /* JolpicaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JolpicaKit;
+		};
+		F87A0F9B2D5A27C900C3E02B /* JolpicaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JolpicaKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F87A0F752D5A182F00C3E02B /* Project object */;
 }

@@ -6,16 +6,40 @@
 //
 
 import SwiftUI
+import JolpicaKit
 
 struct ContentView: View {
+    @StateObject var circuitLoader = CircuitLoader()
+    @StateObject var countryHelper = CountryCodeHelper()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            RacesView()
+                .tabItem {
+                    Label("Races", systemImage: "house")
+                }
+            
+            ResultsView()
+                .tabItem {
+                    Label("Results", systemImage: "house")
+                }
+            
+            ConstructorsView()
+                .tabItem {
+                    Label("Teams", systemImage: "house")
+                }
+            
+            DriversView()
+                .tabItem {
+                    Label("Drivers", systemImage: "house")
+                }
         }
-        .padding()
+        .environmentObject(circuitLoader)
+        .environmentObject(countryHelper)
+        .onAppear() {
+            self.circuitLoader.load()
+            self.countryHelper.loadCountries()
+        }
     }
 }
 

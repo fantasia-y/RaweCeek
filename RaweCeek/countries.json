@@ -1,0 +1,126 @@
+[
+    { "name": "UAE", "code": "ae" },
+    
+    { "name": "Qatar", "code": "qa" },
+    
+    { "name": "Brazil", "code": "br" },
+    { "name": "Brazilian", "code": "br" },
+    
+    { "name": "Mexico", "code": "mx" },
+    { "name": "Mexican", "code": "mx" },
+    
+    { "name": "USA", "code": "us" },
+    { "name": "United States", "code": "us" },
+    { "name": "American", "code": "us" },
+    
+    { "name": "Singapore", "code": "sg" },
+    
+    { "name": "Azerbaijan", "code": "az" },
+    
+    { "name": "Italy", "code": "it" },
+    { "name": "Italian", "code": "it" },
+    
+    { "name": "Netherlands", "code": "nl" },
+    { "name": "Dutch", "code": "nl" },
+    
+    { "name": "Belgium", "code": "be" },
+    { "name": "Belgian", "code": "be" },
+    
+    { "name": "Hungary", "code": "hu" },
+    { "name": "Hungarian", "code": "hu" },
+    
+    { "name": "UK", "code": "gb" },
+    { "name": "British", "code": "gb" },
+    
+    { "name": "Austria", "code": "at" },
+    { "name": "Austrian", "code": "at" },
+    
+    { "name": "Spain", "code": "es" },
+    { "name": "Spanish", "code": "es" },
+    
+    { "name": "Canada", "code": "ca" },
+    { "name": "Canadian", "code": "ca" },
+    
+    { "name": "Monaco", "code": "mc" },
+    { "name": "Monegasque", "code": "mc" },
+    
+    { "name": "China", "code": "cn" },
+    { "name": "Chinese", "code": "cn" },
+    
+    { "name": "Japan", "code": "jp" },
+    { "name": "Japanese", "code": "jp" },
+    
+    { "name": "Australia", "code": "au" },
+    { "name": "Australian", "code": "au" },
+    
+    { "name": "Saudi Arabia", "code": "sa" },
+    
+    { "name": "Bahrain", "code": "bh" },
+    
+    { "name": "Argentina", "code": "ar" },
+    { "name": "Argentine", "code": "ar" },
+    { "name": "Argentinian", "code": "ar" },
+    
+    { "name": "Switzerland", "code": "ch" },
+    { "name": "Swiss", "code": "ch" },
+    
+    { "name": "Germany", "code": "de" },
+    { "name": "German", "code": "de" },
+    { "name": "East German", "code": "de" },
+    
+    { "name": "France", "code": "fr" },
+    { "name": "French", "code": "fr" },
+    
+    { "name": "India", "code": "in" },
+    { "name": "Indian", "code": "in" },
+    
+    { "name": "Korea", "code": "kr" },
+    
+    { "name": "Morocco", "code": "ma" },
+    { "name": "Moroccan", "code": "ma" },
+    
+    { "name": "Malaysia", "code": "my" },
+    { "name": "Malaysian", "code": "my" },
+    
+    { "name": "Portugal", "code": "pt" },
+    { "name": "Portuguese", "code": "pt" },
+    
+    { "name": "Russia", "code": "ru" },
+    { "name": "Russian", "code": "ru" },
+    
+    { "name": "Sweden", "code": "se" },
+    { "name": "Swedish", "code": "se" },
+    
+    { "name": "Turkey", "code": "tr" },
+    
+    { "name": "South Africa", "code": "za" },
+    { "name": "South African", "code": "za" },
+    
+    { "name": "Danish", "code": "dk" },
+    
+    { "name": "Thai", "code": "th" },
+    
+    { "name": "New Zealander", "code": "nz" },
+    
+    { "name": "Finnish", "code": "fi" },
+    
+    { "name": "Chilean", "code": "cl" },
+    
+    { "name": "Colombian", "code": "co" },
+    
+    { "name": "Czech", "code": "cz" },
+    
+    { "name": "Indonesian", "code": "id" },
+    
+    { "name": "Irish", "code": "ie" },
+    
+    { "name": "Polish", "code": "pl" },
+    
+    { "name": "Liechtensteiner", "code": "li" },
+    
+    { "name": "Rhodesian", "code": "rh" },
+    
+    { "name": "Uruguayan", "code": "uy" },
+    
+    { "name": "Venezuelan", "code": "ve" },
+]
