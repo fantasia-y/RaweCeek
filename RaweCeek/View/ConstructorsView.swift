@@ -9,6 +9,7 @@ import SwiftUI
 import JolpicaKit
 
 struct ConstructorsView: View {
+    @EnvironmentObject var seasonViewModel: SeasonViewModel
     @StateObject var viewModel = ConstructorsViewModel()
     
     var body: some View {
@@ -26,7 +27,7 @@ struct ConstructorsView: View {
             .listStyle(.plain)
             .scrollIndicators(.hidden)
             .navigationTitle("Teams")
-            .navigationBarTitleDisplayMode(.large)
+            .toolbarTitleDisplayMode(.inlineLarge)
             .refreshable {
                 await viewModel.loadStandings()
             }
@@ -36,6 +37,12 @@ struct ConstructorsView: View {
                 Task {
                     await viewModel.loadStandings()
                 }
+            }
+        }
+        .seasonSelector()
+        .onChange(of: seasonViewModel.selectedSeason) { _, selected in
+            Task {
+                await viewModel.loadStandings(season: selected)
             }
         }
     }
@@ -78,6 +85,5 @@ struct ConstructorsView: View {
 }
 
 #Preview {
-    ConstructorsView()
-        .environmentObject(CountryCodeHelper())
+    ContentView()
 }

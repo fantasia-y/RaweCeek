@@ -11,6 +11,7 @@
 		F87A0F932D5A262400C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F922D5A262400C3E02B /* JolpicaKit */; };
 		F87A0F992D5A278D00C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F982D5A278D00C3E02B /* JolpicaKit */; };
 		F87A0F9C2D5A27C900C3E02B /* JolpicaKit in Frameworks */ = {isa = PBXBuildFile; productRef = F87A0F9B2D5A27C900C3E02B /* JolpicaKit */; };
+		F87A10612D65CC5F00C3E02B /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = F87A10602D65CC5F00C3E02B /* SwiftUIIntrospect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 				F87A0F9C2D5A27C900C3E02B /* JolpicaKit in Frameworks */,
 				F87A0F932D5A262400C3E02B /* JolpicaKit in Frameworks */,
 				F87A0F992D5A278D00C3E02B /* JolpicaKit in Frameworks */,
+				F87A10612D65CC5F00C3E02B /* SwiftUIIntrospect in Frameworks */,
 				F87A0F902D5A25C400C3E02B /* JolpicaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +82,7 @@
 				F87A0F922D5A262400C3E02B /* JolpicaKit */,
 				F87A0F982D5A278D00C3E02B /* JolpicaKit */,
 				F87A0F9B2D5A27C900C3E02B /* JolpicaKit */,
+				F87A10602D65CC5F00C3E02B /* SwiftUIIntrospect */,
 			);
 			productName = RaweCeek;
 			productReference = F87A0F7D2D5A182F00C3E02B /* RaweCeek.app */;
@@ -111,6 +114,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				F87A0F9A2D5A27C900C3E02B /* XCLocalSwiftPackageReference "../JolpicaKit" */,
+				F87A105F2D65CC5F00C3E02B /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F87A0F7E2D5A182F00C3E02B /* Products */;
@@ -352,6 +356,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		F87A105F2D65CC5F00C3E02B /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		F87A0F8F2D5A25C400C3E02B /* JolpicaKit */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -368,6 +383,11 @@
 		F87A0F9B2D5A27C900C3E02B /* JolpicaKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = JolpicaKit;
+		};
+		F87A10602D65CC5F00C3E02B /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F87A105F2D65CC5F00C3E02B /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

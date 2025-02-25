@@ -12,8 +12,8 @@ import JolpicaKit
 class ConstructorsViewModel: ObservableObject {
     @Published var standings = [ConstructorStanding]()
     
-    func loadStandings() async {
-        let result = await jolpica.constructorStandings.getConstructorStandings(season: "2024")
+    func loadStandings(season: String = "current") async {
+        let result = await jolpica.constructorStandings.getConstructorStandings(season: season)
         
         if case .success(let data) = result {
             self.standings = data.result.standings.first?.standings ?? []

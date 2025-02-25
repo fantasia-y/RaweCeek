@@ -13,8 +13,8 @@ class RacesViewModel: ObservableObject {
     @Published var races: [Race] = []
     @Published var firstRace: Race? = nil
     
-    func loadRaces() async {
-        let result = await jolpica.races.getRaces(season: "2024")
+    func loadRaces(season: String = "current") async {
+        let result = await jolpica.races.getRaces(season: season)
         
         if case .success(let data) = result {
             self.firstRace = data.result.races.first

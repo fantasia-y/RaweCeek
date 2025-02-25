@@ -12,8 +12,8 @@ import JolpicaKit
 class DriversViewModel: ObservableObject {
     @Published var standings = [DriverStanding]()
     
-    func loadStandings() async {
-        let result = await jolpica.driverStandings.getDriverStandings(season: "2024")
+    func loadStandings(season: String = "current") async {
+        let result = await jolpica.driverStandings.getDriverStandings(season: season)
         
         if case .success(let data) = result {
             self.standings = data.result.standings.first?.standings ?? []

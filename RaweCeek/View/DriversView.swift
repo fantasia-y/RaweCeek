@@ -9,13 +9,14 @@ import SwiftUI
 import JolpicaKit
 
 struct DriversView: View {
+    @EnvironmentObject var seasonViewModel: SeasonViewModel
     @StateObject var viewModel = DriversViewModel()
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(viewModel.standings, id: \.self) { standing in
-                    NavigationLink(value: standing) {
+                    NavigationLink(value: standing.driver) {
                         DriverRow(standing: standing, totalPoints: viewModel.standings.first!.points)
                     }
                 }
@@ -26,16 +27,23 @@ struct DriversView: View {
             .listStyle(.plain)
             .scrollIndicators(.hidden)
             .navigationTitle("Drivers")
-            .navigationBarTitleDisplayMode(.large)
+            .toolbarTitleDisplayMode(.inlineLarge)
             .refreshable {
                 await viewModel.loadStandings()
             }
+            
         }
         .onAppear {
             if viewModel.standings.isEmpty {
                 Task {
                     await viewModel.loadStandings()
                 }
+            }
+        }
+        .seasonSelector()
+        .onChange(of: seasonViewModel.selectedSeason) { _, selected in
+            Task {
+                await viewModel.loadStandings(season: selected)
             }
         }
     }
@@ -73,6 +81,5 @@ struct DriversView: View {
 }
 
 #Preview {
-    DriversView()
-        .environmentObject(CountryCodeHelper())
+    ContentView()
 }

@@ -9,6 +9,7 @@ import SwiftUI
 import JolpicaKit
 
 struct RacesView: View {
+    @EnvironmentObject var seasonViewModel: SeasonViewModel
     @StateObject var viewModel = RacesViewModel()
     
     var body: some View {
@@ -34,7 +35,7 @@ struct RacesView: View {
             .listStyle(.plain)
             .scrollIndicators(.hidden)
             .navigationTitle("Races")
-            .navigationBarTitleDisplayMode(.large)
+            .toolbarTitleDisplayMode(.inlineLarge)
             .refreshable {
                 await viewModel.loadRaces()
             }
@@ -46,11 +47,15 @@ struct RacesView: View {
                 }
             }
         }
+        .seasonSelector()
+        .onChange(of: seasonViewModel.selectedSeason) { _, selected in
+            Task {
+                await viewModel.loadRaces(season: selected)
+            }
+        }
     }
 }
 
 #Preview {
-    RacesView()
-        .environmentObject(CircuitLoader())
-        .environmentObject(CountryCodeHelper())
+    ContentView()
 }
